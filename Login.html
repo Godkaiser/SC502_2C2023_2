@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ingreso a sistema</title>
+  <style>
+
+
+    body {
+      
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      background-color: #e684c987;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+      
+    }
+    
+    .container {
+      
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 60px;
+      background-color: rgb(#bd22a3);
+      border: 1px solid #faf2f2;
+      border-radius: 15px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    }
+    
+    h2 {
+      text-align: center;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #000000;
+      border-radius: 5px;
+    }
+    
+    input[type="submit"] {
+      width: 108%;
+      padding: 10px;
+      background-color: #341d31;
+      color: rgb(240, 224, 224);
+      border: none;
+      border-radius: 9px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: rgb(#0e080d);
+    }
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <h2>Ingreso</h2>
+    <form action="login.php" method="POST">
+      <label for="username">Usuario:</label>
+      <p></p>
+      <input type="text" id="username" name="username" required>
+      <p></p>
+      <label for="password">Clave de ingreso:</label>
+      <p></p>
+      <input type="password" id="password" name="password" required>
+      <p></p>
+      <input type="submit" value="Login">
+    </form>
+   
+    
+  </div>
+ 
+</body>
+<div style="text-align: center;">
+
+  <img src="NancySalon.jpg" alt="Logo de empresa" style="width:20%">
+  
+  </div>
+</html>

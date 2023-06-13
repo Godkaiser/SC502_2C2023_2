@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nancy Salon</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="views/assets/css/Index.css">
+</head>
+
+<body>
+
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left " style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Cerrar &times;</button>
+    <a href="Index.html" class="w3-bar-item w3-button">Inicio</a>
+    <a href="Login.html" class="w3-bar-item w3-button">Ingresar a sistema</a>
+    <a href="CompraVirtual.html" class="w3-bar-item w3-button">Compra Virtual</a>
+    <a href="Servicios.html" class="w3-bar-item w3-button">Servicios</a>
+    <a href="Citas.html" class="w3-bar-item w3-button">Reservacion de Cita</a>
+    <a href="Nosotros.html" class="w3-bar-item w3-button">Nosotros</a>
+  </div>
+
+  <div id="main">
+    <div class="w3-teal">
+      <button id="openNav" class="w3-button w3-black w3-xlarge w3-black" onclick="w3_open()">&#9776; </button>
+      <div class="w3-container ">
+        <strong>
+          <h1>Nancy Hair Salon</h1>
+        </strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="Logo" style="text-align: center;">
+    <img src="img/LogoNancy.png" alt="Logo de empresa" style="width:25%">
+  </div>
+
+
+  <div class="w3-container">
+  </div>
+
+  <script>
+    function w3_open() {
+      document.getElementById("main").style.marginLeft = "10%";
+      document.getElementById("mySidebar").style.width = "10%";
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("openNav").style.display = 'none';
+    }
+    function w3_close() {
+      document.getElementById("main").style.marginLeft = "0%";
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("openNav").style.display = "inline-block";
+    }
+  </script>
+
+</body>
+
+</html>

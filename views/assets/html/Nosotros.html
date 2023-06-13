@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="Nosotros.css">
+</head>
+
+<body>
+    <div class="SideBar" style="display:none" id="mySidebar">
+        <button class="BotonCerrar" onclick="Cerrar_Nav()">Cerrar &times;</button>
+        <a href="Login.html" class="OpcionNav">Ingresar a sistema</a>
+        <a href="CompraVirtual.html" class="OpcionNav">Compra Virtual</a>
+        <a href="Servicios.html" class="OpcionNav">Servicios</a>
+        <a href="Citas.html" class="OpcionNav">Reservacion de Cita</a>
+        <a href="Nosotros.html" class="OpcionNav">Nosotros</a>
+    </div>
+
+    <div id="main">
+        <div class="Botones">
+            <button id="AbrirNav" class="BotonNav" onclick="Abrir_Nav()">&#9776; </button>
+            <div class="ContenedorNav">
+                <strong>
+                    <h1>Nancy Hair Salon</h1>
+                </strong>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function Abrir_Nav() {
+            document.getElementById("main").style.marginLeft = "10%";
+            document.getElementById("mySidebar").style.width = "10%";
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("openNav").style.display = 'none';
+        }
+        function Cerrar_Nav() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>
+</body>
+
+</html>

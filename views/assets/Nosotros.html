@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/Nosotros.css">
+</head>
+
+<body>
+    <div class="SideBar w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="miSidebar">
+        <button class="BotonCerrar w3-bar-item w3-button w3-large" onclick="Cerrar_Nav()">Cerrar &times;</button>
+        <a href="Index.html" class="OpcionNav w3-button w3-bar-item"><br>Inicio</a>
+        <a href="Login.html" class="OpcionNav w3-button w3-bar-item"><br>Ingresar a sistema</a>
+        <a href="CompraVirtual.html" class="OpcionNav w3-button w3-bar-item"><br>Compra Virtual</a>
+        <a href="Servicios.html" class="OpcionNav w3-button w3-bar-item"><br>Servicios</a>
+        <a href="Citas.html" class="OpcionNav w3-button w3-bar-item"><br>Reservacion de Cita</a>
+        <a href="Nosotros.html" class="OpcionNav w3-button w3-bar-item"><br>Nosotros</a>
+    </div>
+
+    <div id="main">
+        <div class="header">
+            <div class="contenedorNav"> 
+                <button id="AbrirNav" class="BotonNav" onclick="Abrir_Nav()">&#9776;</button>
+            </div>
+            <div class="Banner">
+                <h1>Sobre Nosotros</h1>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        function Abrir_Nav() {
+            document.getElementById("main").style.marginLeft = "10%";
+            document.getElementById("miSidebar").style.width = "10%";
+            document.getElementById("miSidebar").style.display = "block";
+            document.getElementById("AbrirNav").style.display = 'none';
+        }
+        function Cerrar_Nav() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("miSidebar").style.display = "none";
+            document.getElementById("AbrirNav").style.display = "inline-block";
+        }
+    </script>
+</body>
+
+</html>

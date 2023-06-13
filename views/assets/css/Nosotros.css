@@ -1,0 +1,49 @@
+.contenedorNav{
+    margin: auto;
+    background-color: #D98B99;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #A6216A;
+}
+
+.SideBar{
+    background-color: #A62177;
+    display: none;
+   animation: left;
+}
+
+.BotonCerrar{
+    background-color: white;
+}
+
+.BotonNav{
+    background-color: #A6216A;
+    color: white;
+    border-color: transparent;
+    border-radius: 5%;
+}
+
+.Banner{
+    width: 100%;
+	height: 250px;
+	position: fixed;
+	background-image: url(https://scontent.fsyq7-1.fna.fbcdn.net/v/t39.30808-6/244481694_4195680327221632_4858466077293101051_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0debeb&_nc_ohc=pGvpiA12-WAAX_qys3k&_nc_ht=scontent.fsyq7-1.fna&oh=00_AfAHPmEzaucTxHrVZaVpdgogFmOJ6dLAsIiJ_apWFJTuDg&oe=648C051D);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+
+.Banner h1{
+    text-align: center;
+    padding-top: 5%;
+	font-size: 70px;
+	font-family: poppins;
+	text-transform: uppercase;
+	color: #D98B99;
+}
+
+
+
+

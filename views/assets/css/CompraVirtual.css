@@ -1,3 +1,27 @@
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.icono{
+    width: 40px;
+    height: 40px;
+    color: #A62177;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
 .contenedorNav{
     margin: auto;
     background-color: #D98B99;
@@ -5,12 +29,12 @@
 
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #A6216A;
+    color: black;
 }
 
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:#D98B99;
+    color:#A62177;
 }
 
 .SideBar{

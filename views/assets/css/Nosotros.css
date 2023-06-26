@@ -1,6 +1,6 @@
-.contenedorNav{
+.contenedorNav {
     margin: auto;
-    background-color: #D98B99;
+    background-color: #A6216A;
 }
 
 h1 {
@@ -8,42 +8,74 @@ h1 {
     color: #A6216A;
 }
 
-.SideBar{
-    background-color: #A62177;
+.Navegador {
+    background-color: white;
     display: none;
-   animation: left;
+    animation: left;
 }
 
-.BotonCerrar{
+.BotonCerrar {
     background-color: white;
 }
 
-.BotonNav{
+.BotonNav {
     background-color: #A6216A;
     color: white;
     border-color: transparent;
     border-radius: 5%;
 }
 
-.Banner{
-    width: 100%;
-	height: 250px;
-	position: fixed;
-	background-image: url(https://scontent.fsyq7-1.fna.fbcdn.net/v/t39.30808-6/244481694_4195680327221632_4858466077293101051_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0debeb&_nc_ohc=pGvpiA12-WAAX_qys3k&_nc_ht=scontent.fsyq7-1.fna&oh=00_AfAHPmEzaucTxHrVZaVpdgogFmOJ6dLAsIiJ_apWFJTuDg&oe=648C051D);
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-}
-
-.Banner h1{
+.Banner h1 {
     text-align: center;
     padding-top: 5%;
-	font-size: 70px;
-	font-family: poppins;
-	text-transform: uppercase;
-	color: #D98B99;
+    font-size: 70px;
+    font-family: poppins;
+    text-transform: uppercase;
+    color: white;
+    background-color: #A6216A;
+    margin-top: -0.1%;
+    padding-bottom: 15%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.imgNosotros {
+    width: 550px;
+    margin-top: -10%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.InfoSalon {
+    padding-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+}
 
+.subtituloNosotros {
+    text-align: center;
+    padding-bottom: 2%;
+    color: #A6216A;
+}
 
+.footerNosotros {
+    background-color: #A6216A;
+    color: white;
+}
+
+.logo {
+    color: #A6216A;
+}
+
+.encuentranos{
+    background-color: #A6216A;
+    color: white;
+}
+
+.imgLocal{
+    width: 550px;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}

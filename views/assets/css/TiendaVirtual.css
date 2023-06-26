@@ -1,0 +1,113 @@
+.contenedorNav {
+    margin: auto;
+    background-color: #A6216A;
+}
+
+.Navegador {
+    background-color: white;
+    display: none;
+    animation: left;
+}
+
+.BotonCerrar {
+    background-color: white;
+}
+
+.BotonNav {
+    background-color: #A6216A;
+    color: white;
+    border-color: transparent;
+    border-radius: 5%;
+}
+
+.titulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #A6216A;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.cabello{
+    background-color: #A6216A;
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+  
+  .productos {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  
+  .producto {
+    width: 30%;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .agregarcarrito {
+    display: block;
+    margin: 10px auto;
+    padding: 15px 40px;
+    background-color: #A6216A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .uñas{
+    margin-top: 80px;
+    margin-bottom: 25px;
+    background-color: #A6216A;
+    text-align: center;
+    color: white;
+}
+
+.maquillaje{
+    margin-top: 80px;
+    margin-bottom: 25px;
+    background-color: #A6216A;
+    text-align: center;
+    color: white;
+}
+
+
+  
+  .carrito {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .carrito h2 {
+    text-align: center;
+    color: #A6216A;
+  }
+  
+  .carrito ul {
+    padding: 0;
+  }
+  
+  .carrito li {
+    list-style-type: none;
+    margin-bottom: 5px;
+  }
+  
+  .carrito p {
+    text-align: right;
+    margin-top: 10px;
+  }
+  
+  .footerNosotros {
+    background-color: #A6216A;
+    color: white;
+}
+
+  

@@ -2,6 +2,10 @@
 
 body{
   font-family: 'Libre Baskerville', serif;
+  background-image: url("fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 .contenedorNav {
     margin: auto;

@@ -1,5 +1,7 @@
 body {
-  background-color: #A6216A;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Ysabeau Office', sans-serif;
+  background-color: white;
 }
 
 .contenedorNav {
@@ -25,8 +27,11 @@ body {
 }
 
 .titulo {
+  margin-top: 30px;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Ysabeau Office', sans-serif;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 
@@ -36,12 +41,15 @@ body {
 }
 
 .servicio {
+  font-family: 'Pacifico', cursive;
+  font-family: 'Ysabeau Office', sans-serif;
   text-align: center;
   margin: 20px;
   padding: 20px;
-  background-color: #fff;
+  background-color: #D98B99;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #4F2015;
 }
 
 .servicio img {
@@ -75,6 +83,8 @@ body {
 }
 
 .footerNosotros {
+  padding-top: 1px;
+  text-align: center;
   background-color: #A6216A;
   color: white;
 }

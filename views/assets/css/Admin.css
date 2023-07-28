@@ -3,6 +3,7 @@
 body {
     background: linear-gradient(to bottom right, #A6216A, #D98B99, white);
     background-repeat: no-repeat;
+
     font-family: 'Libre Baskerville', serif;
 }
 
@@ -17,6 +18,7 @@ body {
     animation: left;
 }
 
+
 .BotonCerrar {
     background-color: white;
 }
@@ -28,8 +30,6 @@ body {
     border-radius: 5%;
 }
 
-
-
 .titulo {
     text-align: center;
     color: white;
@@ -37,6 +37,7 @@ body {
     margin-bottom: 40px;
     font-family: 'Libre Baskerville', serif;
 }
+
 
 .form-group {
     margin-bottom: 20px;
@@ -48,67 +49,15 @@ body {
     color: #555;
   }
   
-  input[type="text"],
-  input[type="date"],
-  input[type="time"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  button[type="submit"] {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #A6216A;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #D98B99;
-  }
-  
   form {
-    max-width: 650px;
+    max-width: 250px;
     margin: 0 auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     align-content: justify
-  }
-  
-  .service-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  
-  .service-button {
-    padding: 10px 20px;
-    font-size: 14px;
-    background-color: #ccc;
-    color: #333;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .service-button:hover {
-    background-color: #999;
-  }
-  
-  .service-button.selected {
-    background-color: #A6216A;
-    color: white;
-  }
-  
+  }  
 
 .footerNosotros {
     background-color: #A6216A;

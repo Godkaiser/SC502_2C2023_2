@@ -1,8 +1,8 @@
 <?php
-$dbhost = "localhost:8080";
+$dbhost = "localhost:3306";
 $dbuser = "root";
-$dbpass = "";
-$dbname = "test";
+$dbpass = "Colochosma";
+$dbname = "SC502_2C2023_G2";
 
 $conn = mysqli_connect($dbhost,$dbuser, $dbpass,$dbname);
 if(!$conn)
@@ -15,7 +15,7 @@ $pass = $_POST["password"];
  echo "bienvenido".$nombre
 
 $query = mysqli_query($conn, "select * from login where usuario = '".$nombre."' and password = '".$pass."'");
-
+$nr = mysqli_num_rows($query);
 if($nr == 1)
 {
   echo "bienvenido".$nombre;

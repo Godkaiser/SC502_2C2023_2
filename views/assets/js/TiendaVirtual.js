@@ -42,6 +42,11 @@ function updateCart() {
   cartCountElement.textContent = cartItems.length;
 }
 
+function realizarCompra() {
+  window.location.href = "compra.html";
+}
+
+
 function Abrir_Carrito() {
   const carrito = document.getElementById('carrito');
   carrito.style.display = 'block';

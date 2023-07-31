@@ -143,6 +143,21 @@ body {
   font-weight: normal;
 }
 
+.realizar-compra {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #BF9765;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 .cerrar-carrito {
   display: block;
   margin-top: 20px;

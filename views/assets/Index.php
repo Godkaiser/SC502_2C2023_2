@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -17,7 +17,6 @@
 </head>
 
 
-
 <body>
     <!-- SIDEBAR -->
     <div class="Navegador w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="miSidebar">
@@ -29,6 +28,7 @@
       <a href="Citas.html" class="OpcionNav w3-button w3-bar-item"><br>Reservacion de Cita</a>
       <a href="Nosotros.html" class="OpcionNav w3-button w3-bar-item"><br>Nosotros</a>
     </div>
+
 
 
     <div id="main">

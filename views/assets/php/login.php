@@ -1,14 +1,24 @@
 <?php
-$dbhost = "localhost:3306";
-$dbuser = "root";
-$dbpass = "Colochosma";
-$dbname = "SC502_2C2023_G2";
+$servidor = "localhost:3305";
+$usuario = "root";
+$contrasena = "Colochosma";
+$dbnombre = "SC502_2C2023_G2";
 
-$conn = mysqli_connect($dbhost,$dbuser, $dbpass,$dbname);
-if(!$conn)
+$conexion = mysqli_connect($servidor,$usuario, $contrasena, $dbnombre);
+if(!$conexion)
 {
-    die("no hay conexion".mysqli_connect_error());
+    die("Conexion Fallida".mysqli_connect_error());
 }
+
+$sql = "SELECT * FROM clientes";
+$resultado = mysqli_query($conexion, $sql);
+
+if(mysqli_num_rows($resultado)>0){
+  while($fila = mysqli_fetch_assoc($resultado)){
+    echo "ID: " . $fila["id"]
+  }
+}
+
 $nombre = $_POST["username"];
 $pass = $_POST["password"];
 

@@ -1,12 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 
-body{
-  font-family: 'Libre Baskerville', serif;
-  background-image: url("fondo.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
 .contenedorNav {
     margin: auto;
     background-color: #A6216A;
@@ -29,28 +24,92 @@ body{
     border-radius: 5%;
 }
 
-.titulo{
-    color: #A6216A;
+.titulo {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: 'Mouse Memoirs', sans-serif;
+    color: #BF9765;
+    text-align: center;
+    font-size: 55px;
+}
+
+.subtitulo{
+    font-family: 'Mouse Memoirs', sans-serif;
+    color: #D98B99;
+    font-size: 40px;
     text-align: center;
 }
 
+.bienvenida{
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .footerNosotros {
+    padding-top: 0.01px;
     background-color: #A6216A;
     color: white;
 }
 
-.Carruzel{
-    
-  margin-top: 100px;
-  margin-bottom: 100;
-  margin-right: 50px;
-  margin-left: 50px;
-
+.carruzel{
+    position: relative;
+    bottom: 243px;
 }
-H2{
-    
-   
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   text-align: center;
-  
-  }
+
+.carta-login{
+    margin-left: 30px;
+    border: 1px solid #D98B99;
+    border-radius: 5px;
+}
+
+.carta-reg{
+    margin-left: 50px;
+    border: 1px solid #D98B99;
+    border-radius: 5px;
+    position: relative;
+    Top: 160px;
+    left: 30px;
+}
+
+.boton-carta{
+    border-radius: 9%;
+    background-color: #A6216A;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.boton-carta:hover{
+    background-color: #A6216A;
+    color: white;
+    border: 1px solid #A6216A;
+}
+
+.carta{
+    border-radius: 2px solid  #A6216A;
+    background-color: #D98B99;
+    padding: 5px 5px;
+}
+
+.carta-reg{
+    border-radius: 2px solid  #A6216A;
+    background-color: #D98B99;
+    padding: 5px 5px;
+    margin-left: 1px;
+}
+
+.titulo-carta{
+    font-family: 'Mouse Memoirs', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    color: #A6216A;
+}
+
+.texto-carta{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+

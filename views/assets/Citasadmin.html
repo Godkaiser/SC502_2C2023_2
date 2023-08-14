@@ -5,19 +5,15 @@
     <title>Citas Agendadas</title>
     <style>
         body {
-            
-            font-family: 'Pacifico', cursive;
-            font-family: 'Ysabeau Office', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            background: linear-gradient(to bottom right, #A6216A, #D98B99, white);
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
         }
 
+
         .container {
+            position: center;
             max-width: 400px;
             margin: 0 auto;
             padding: 60px;
@@ -25,6 +21,21 @@
             border: 5px solid #A62177;
             border-radius: 15px;
             box-shadow: 0 0 30px rgba(100, 16, 53, 0.9);
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #A6216A;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #D98B99;
         }
 
         h2 {
@@ -36,15 +47,66 @@
             margin-bottom: 10px;
         }
 
+        .contenedorNav {
+            margin: auto;
+            background-color: #A6216A;
+        }
+
+        .Navegador {
+            background-color: white;
+            display: none;
+            animation: left;
+        }
+
+        .BotonCerrar {
+            background-color: white;
+        }
+
+        .BotonNav {
+            background-color: #A6216A;
+            color: white;
+            border-color: transparent;
+            border-radius: 5%;
+        }
+
+        .titulo {
+            color: #A6216A;
+            text-align: center;
+        }
+
+
+        .gradient {
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(334deg, #d98b99, #bf9765, #A62177);
+            background-size: 180% 180%;
+            animation: gradient-animation 4s ease infinite;
+        }
+
+        @keyframes gradient-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+
         input[type="text"],
-  input[type="date"],
-  input[type="time"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
+        input[type="date"],
+        input[type="time"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
     </style>
 
 </head>
@@ -58,7 +120,14 @@
                 <label for="name-input">Nombre del cliente:</label>
                 <input type="text" id="name-input" placeholder="Ingrese el nombre del cliente">
             </div>
-
+            <div class="form-group">
+                <label for="name-input">Primer Apellido del cliente:</label>
+                <input type="text" id="name-input" placeholder="Ingrese el primer apellido del cliente">
+            </div>
+            <div class="form-group">
+                <label for="name-input">Segundo Apellido del cliente:</label>
+                <input type="text" id="name-input" placeholder="Ingrese el segundo apellido del cliente">
+            </div>
             <div class="form-group">
                 <p></p>
                 <label for="date-input">Fecha de la cita:</label>

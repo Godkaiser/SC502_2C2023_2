@@ -3,7 +3,6 @@
 body {
     background: linear-gradient(to bottom right, #A6216A, #D98B99, white);
     background-repeat: no-repeat;
-
     font-family: 'Libre Baskerville', serif;
 }
 
@@ -18,7 +17,6 @@ body {
     animation: left;
 }
 
-
 .BotonCerrar {
     background-color: white;
 }
@@ -30,6 +28,8 @@ body {
     border-radius: 5%;
 }
 
+
+
 .titulo {
     text-align: center;
     color: white;
@@ -37,7 +37,6 @@ body {
     margin-bottom: 40px;
     font-family: 'Libre Baskerville', serif;
 }
-
 
 .form-group {
     margin-bottom: 20px;
@@ -48,16 +47,18 @@ body {
     font-weight: bold;
     color: #555;
   }
-  
+
   form {
-    max-width: 250px;
+    max-width: 650px;
     margin: 0 auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     align-content: justify
-  }  
+  }
+  
+  
 
 .footerNosotros {
     background-color: #A6216A;

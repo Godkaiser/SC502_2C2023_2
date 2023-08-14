@@ -46,74 +46,76 @@
                         flex-wrap: wrap;
                         gap: 10px;
                     }
+
+                    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+                    body {
+                        background: linear-gradient(to bottom right, #A6216A, #D98B99, white);
+                        background-repeat: no-repeat;
+                        height: 100vh;
+                        width: 100%;
+                    }
+
+                    .contenedorNav {
+                        margin: auto;
+                        background-color: #A6216A;
+                    }
+
+                    .Navegador {
+                        background-color: white;
+                        display: none;
+                        animation: left;
+                    }
+
+                    .BotonCerrar {
+                        background-color: white;
+                    }
+
+                    .BotonNav {
+                        background-color: #A6216A;
+                        color: white;
+                        border-color: transparent;
+                        border-radius: 5%;
+                    }
+
+
+
+                    .titulo {
+                        text-align: center;
+                        color: white;
+                        margin-top: 30px;
+                        margin-bottom: 40px;
+                        font-family: 'Libre Baskerville', serif;
+                    }
+
+                    .form-group {
+                        margin-bottom: 20px;
+                    }
+
+                    label {
+                        display: block;
+                        font-weight: bold;
+                        color: #555;
+                    }
+
+                    form {
+                        max-width: 650px;
+                        margin: 0 auto;
+                        background-color: #fff;
+                        padding: 20px;
+                        border-radius: 5px;
+                        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                        align-content: justify
+                    }
                 </style>
-                <a class="button" href="Citasadmin.html" target="_blank"> Citas Agendadas</a>
-                <a class="button" href="ServicioAdmin.html" target="_blank"> Servicios</a>
-                <a class="button" href="VentasAdmin.html" target="_blank"> Ventas</a>
+                <a class="button" href="Citasadmin.html"> Citas Agendadas</a>
+                <a class="button" href="ServicioAdmin.html"> Servicios</a>
+                <a class="button" href="VentasAdmin.html"> Ventas</a>
             </div>
             <div></div>
         </div>
 
     </form>
-
-    <!-- FOOTER -->
-    <footer class="footerNosotros text-light">
-        <section class="">
-            <div class="container text-center text-md-start mt-5">
-                <div class="row mt-3">
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="fas fa-gem me-3"></i>Nancy's Salon
-                        </h6>
-                        <p>
-                            Salon de belleza con una gran variedad de servicios para brindar. Ademas vendemos productos
-                            de alta
-                            gama para el cuidado de tu cabello, uñas y piel. <br> ¡Agenda tu cita con nosotros!
-
-                        </p>
-                    </div>
-
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Navegar
-                        </h6>
-                        <p>
-                            <a href="Index.html" class="link-light">Inicio</a>
-                        </p>
-                        <p>
-                            <a href="Login.html" class="link-light">Login</a>
-                        </p>
-                        <p>
-                            <a href="TiendaVirtual.html" class="link-light">Tienda Virtual</a>
-                        </p>
-                        <p>
-                            <a href="Servicios.html" class="link-light">Servicios</a>
-                        </p>
-                        <p>
-                            <a href="Nosotros.html" class="link-light">Nosotros</a>
-                        </p>
-                    </div>
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="fas fa-home me-3"></i> San José, Costa Rica</p>
-                        <p>
-                            <i class="fas fa-envelope me-3"></i>
-
-                            Centrodebellezanancyssalon@gmail.com
-
-                        </p>
-                        <p><i class="fas fa-phone me-3"></i> +506 8990-2392</p>
-                        <p><i class="fas fa-phone me-3"></i> +506 2229 1726</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2023 Copyright:
-            <a class="text-reset fw-bold">Nancy Salon</a>
-        </div>
-    </footer>
-
     <script src="js/Citas.js"></script>
 </body>
 

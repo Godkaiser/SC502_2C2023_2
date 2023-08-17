@@ -29,7 +29,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="Admin.php" class="nav-link">Inicio</a>
+        <a href="Admin.php" class="nav-link active">Inicio</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="Citasadmin.html" class="nav-link">Citas</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="ServicioAdmin.html" class="nav-link">Servicios</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="TiendaAdmin.html" class="nav-link">Tienda</a>
       </li>
     </ul>
 
@@ -152,7 +161,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
               </li>
               <li class="nav-item">
-                <a href="citas.html" class="nav-link">
+                <a href="citasadmin.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p class="txtBtn">Citas</p>
                 </a>

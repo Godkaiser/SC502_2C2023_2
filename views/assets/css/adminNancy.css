@@ -53026,7 +53026,6 @@ a.text-muted:hover {
 .btnNavega{
   background-color: white;
   color:  #A6216A;
-  
 }
 
 .txtNavega{
@@ -53050,5 +53049,13 @@ a.text-muted:hover {
   color:#A6216A;
 }
 
+.tablaCitas{
+  background-color: #A6216A;
+}
+
+.btn-Buscar, .btn-Guardar{
+  background-color: #BF9765;
+  color: white;
+}
 
 /*# sourceMappingURL=adminlte.css.map */

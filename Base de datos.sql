@@ -18,14 +18,14 @@ CREATE TABLE clientes (
     email VARCHAR(20),
     telefono VARCHAR(20),
     contrasena VARCHAR(15) NOT NULL
-
 );
  
 CREATE TABLE productos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
-    descripcion TEXT,
-    precio DECIMAL(10 , 2 ) NOT NULL
+    precio DECIMAL(10 , 2 ) NOT NULL,
+    ImagenPro   LONGBLOB,
+    categoria  VARCHAR(100)
 );
 
 CREATE TABLE citas (

@@ -40,16 +40,22 @@ body {
 
 .cabello {
   text-align: center;
-  margin-bottom: 25px;
   font-family: 'Mouse Memoirs', sans-serif;
   font-size: 50px;
   color: white;
   background-color: #D98B99;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los productos se envuelvan en filas si no caben en el ancho de la pantalla */
+  justify-content: center; /* Centra los productos horizontalmente */
+  margin-bottom: 25px; /* Espaciado inferior entre categorías */
+
 }
 
 .productos {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap; /* Permite que los productos se envuelvan en filas si no caben en el ancho de la pantalla */
+  justify-content: center; /* Centra los productos horizontalmente */
+  margin-bottom: 25px; /* Espaciado inferior entre categorías */
   margin-left: 1%;
   margin-right: 1%;
 }
@@ -84,6 +90,26 @@ body {
 }
 
 .maquillaje {
+  margin-top: 80px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-size: 50px;
+  color: white;
+  background-color: #D98B99;
+}
+
+.cremas {
+  margin-top: 80px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-size: 50px;
+  color: white;
+  background-color: #D98B99;
+}
+
+.otros{
   margin-top: 80px;
   margin-bottom: 25px;
   text-align: center;

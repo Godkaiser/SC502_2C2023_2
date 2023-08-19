@@ -15,7 +15,7 @@
                 <img src="img\LogoNancy.png" alt="Logo de empresa" style="width:35%">
             </div>
             <h1>Olvide mi contraseña</h1>
-            <form action="login.php" method="POST">
+            <form action="php/cambiocontrasena.php" method="POST">
 
                 <label for="username">Usuario:</label>
                 <p></p>
@@ -24,8 +24,12 @@
                 <p></p>
                 <input type="email" id="email" name="email" required>
                 <p></p>
+                <label for="password">Nueva Contraseña:</label>
+                <p></p>
+                <input type="password" id="password" name="password" required>
+                <p></p>
                 <br>
-                <input type="submit" value="SOLICITAR">
+                <input type="submit" value="CAMBIAR">
             </form>
             <a href="Login.html" class="cuenta"><br>Volver</a>
            

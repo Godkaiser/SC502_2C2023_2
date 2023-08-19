@@ -33,88 +33,35 @@
 
   <h1 class="titulo">Servicios<br></h1>
 
+  <?php
+$servidor = "localhost:3306";
+$usuario = "root";
+$contrasena = "";
+$dbnombre = "SC502_2C2023_G2";
 
-  <div class="servicios">
-    <div class="servicio">
-      <img src="img/corte.cabello.jpg" alt="Corte de Cabello">
-      <h2>Corte de Cabello</h2>
-      <p>Descripción del servicio de corte de cabello.</p>
+$conn = mysqli_connect($servidor, $usuario, $contrasena, $dbnombre);
 
-    </div>
+if (!$conn) {
+    die("Error de conexión: " . mysqli_connect_error());
+}
 
-    <div class="servicio">
-      <img src="img/lavado.cabello.jpg" alt="Lavado de Cabello">
-      <h2>Lavado de Cabello</h2>
-      <p>Descripción del servicio de lavado de cabello.</p>
+// Obtener datos de la tabla Servicios
+$query = "SELECT Nombre_Servicio, descripcion, ImagenSer FROM Servicios";
+$result = mysqli_query($conn, $query);
+?>
 
-    </div>
-
-    <div class="servicio">
-      <img src="img/planchado.jpg" alt="Planchado de cabello">
-      <h2>Planchado de cabello</h2>
-      <p>Descripción del servicio de planchado de cabello.</p>
-    </div>
-
-    <div class="servicio">
-      <img src="img/tinte.jpg" alt="Tintes">
-      <h2>Tintes</h2>
-      <p>Descripción del servicio de tintes.</p>
-
-    </div>
-  </div>
-
-  <div class="servicios">
-    <div class="servicio">
-      <img src="img/keratina.jpg" alt="Keratinas">
-      <h2>Keratinas</h2>
-      <p>Descripción del servicio de keratinas</p>
-
-    </div>
-
-    <div class="servicio">
-      <img src="img/depilacion.jpg" alt="Depilación">
-      <h2>Depilación</h2>
-      <p>Descripción del servicio de depilación.</p>
-
-    </div>
-
-    <div class="servicio">
-      <img src="img/manicure.jpg" alt="Manicure">
-      <h2>Manicure</h2>
-      <p>Descripción del servicio de manicure.</p>
-
-    </div>
-
-    <div class="servicio">
-      <img src="img/pedicure.jpg" alt="Pedicure">
-      <h2>Pedicure</h2>
-      <p>Descripción del servicio de pedicure.</p>
-
-    </div>
-  </div>
-  <div class="servicios">
-
-    <div class="servicio">
-      <img src="img/maquillaje.jpg" alt="Maquillaje">
-      <h2>Maquillaje</h2>
-      <p>Descripción del servicio de maquillaje.</p>
-
-    </div>
-
-    <div class="servicio">
-      <img src="img/bronceados.jpg" alt="Bronceados">
-      <h2>Bronceados</h2>
-      <p>Descripción del servicio de bronceados.</p>
-
-    </div>
-
-    <div class="servicio">
-      <img src="img/lifting.jpg" alt="Lifting de pestañas">
-      <h2>Lifting de pestañas</h2>
-      <p>Descripción del servicio de Liftin de pestañas.</p>
-
-    </div>
-  </div>
+<!-- Mostrar servicios -->
+<div class="servicios">
+    <?php
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo '<div class="servicio">';
+        echo '<img src="data:image/jpeg;base64,' . base64_encode($row['ImagenSer']) . '" alt="' . $row['Nombre_Servicio'] . ' '. $row['descripcion'] .'">';
+        echo '<h2>' . $row['Nombre_Servicio'] . '</h2>';
+        echo '<p>' . $row['descripcion'] . '</p>';
+        echo '</div>';
+    }
+    ?>
+</div>
 
   <!-- FOOTER -->
   <footer class="footerNosotros text-light">

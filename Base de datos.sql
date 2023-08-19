@@ -1,13 +1,7 @@
-drop schema SC502_2C2023_G2 ;
-
 CREATE SCHEMA SC502_2C2023_G2 ;
 use SC502_2C2023_G2;
 
- 
-
 create user 'admin@%' identified by 'Clave';
-
- 
 
 CREATE TABLE login (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -15,8 +9,6 @@ CREATE TABLE login (
     password VARCHAR(255) NOT NULL,
     user_id INT NOT NULL
 );
-
- 
 
 CREATE TABLE clientes (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -28,17 +20,13 @@ CREATE TABLE clientes (
     contrasena VARCHAR(15) NOT NULL
 
 );
-
  
-
 CREATE TABLE productos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
     descripcion TEXT,
     precio DECIMAL(10 , 2 ) NOT NULL
 );
-
- 
 
 CREATE TABLE citas (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -48,20 +36,15 @@ CREATE TABLE citas (
     hora TIME NOT NULL
 );
 
-
-
 CREATE TABLE roles (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL
 );
 
- 
-
- 
-
 CREATE TABLE Servicios(
     id INT AUTO_INCREMENT PRIMARY KEY,
     Nombre_Servicio VARCHAR(50) NOT NULL,
+    descripcion_servicio VARCHAR(200) NOT NULL,
     ImagenSer   LONGBLOB    
 );
 

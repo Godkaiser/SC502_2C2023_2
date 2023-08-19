@@ -67,3 +67,71 @@ setTimeout(function(){
 $('#card-number').change(function(){
   console.log(getCreditCardType($(this).val()));
 })*/
+$(document).ready(function() {
+  // Función para manejar el clic en el botón de confirmación
+  function confirmarPago() {
+    Swal.fire({
+      title: '¿Estás seguro de realizar la compra?',
+      text: "No podrás revertir esta acción",
+      icon: 'question',
+      showCancelButton: true,
+      cancelButtonText: 'No',
+      confirmButtonText: 'Sí'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: '¡Compra realizada!',
+          text: 'Te estamos redirigiendo al inicio del sitio web.',
+          icon: 'success',
+          timer: 2000, // Duración del mensaje (en milisegundos)
+          showConfirmButton: false
+        }).then(() => {
+          window.location.href = 'inicio.html'; // Redireccionar al inicio
+        });
+      } else if (result.isDismissed === Swal.DismissReason.cancel) {
+        Swal.fire(
+          'Cancelado',
+          'Tu compra ha sido cancelada.',
+          'error'
+        );
+      }
+    });
+  }
+
+  // Asociar la función confirmarPago al clic del botón
+  $('.btn.ConfirmarPago').on('click', function(event) {
+    event.preventDefault(); // Prevenir el comportamiento predeterminado del botón
+    confirmarPago();
+  });
+
+    // Otras funciones y código aquí
+
+  // Deshabilitar el botón Submit al inicio
+  $('.btn.ConfirmarPago').prop('disabled', true);
+
+  // Función para verificar si todos los campos están llenos
+  function verificarCamposLlenos() {
+    var camposLlenos = true;
+
+    // Verificar cada campo de entrada
+    $('.form input, .form select').each(function() {
+      if ($(this).val() === '') {
+        camposLlenos = false;
+        return false; // Salir del bucle si un campo está vacío
+      }
+    });
+
+    return camposLlenos;
+  }
+
+  // Habilitar o deshabilitar el botón Submit según el estado de los campos
+  $('.form input, .form select').on('input change', function() {
+    if (verificarCamposLlenos()) {
+      $('.btn.ConfirmarPago').prop('disabled', false);
+    } else {
+      $('.btn.ConfirmarPago').prop('disabled', true);
+    }
+  });
+  
+});
+

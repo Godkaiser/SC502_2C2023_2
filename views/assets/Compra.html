@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=}, initial-scale=1.0">
-    <title>Pago en Linea</title>
-    <link rel="stylesheet" href="css/Compra.scss">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=}, initial-scale=1.0">
+  <title>Pago en Linea</title>
+  <link rel="stylesheet" href="css/Compra.scss">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
+
 <body>
-    
-<div class="checkout">
+
+  <div class="checkout">
     <div class="credit-card-box">
       <div class="flip">
         <div class="front">
           <div class="chip"></div>
           <div class="logo">
-            <svg version="1.1" id="visa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 width="47.834px" height="47.834px" viewBox="0 0 47.834 47.834" style="enable-background:new 0 0 47.834 47.834;">
+            <svg version="1.1" id="visa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" width="47.834px" height="47.834px" viewBox="0 0 47.834 47.834"
+              style="enable-background:new 0 0 47.834 47.834;">
               <g>
                 <g>
                   <path d="M44.688,16.814h-3.004c-0.933,0-1.627,0.254-2.037,1.184l-5.773,13.074h4.083c0,0,0.666-1.758,0.817-2.143
@@ -28,26 +35,27 @@
                            C33.126,23.546,34.163,24.783,34.146,26.404z M0,16.962l0.05-0.286h6.028c0.813,0.031,1.468,0.29,1.694,1.159l1.311,6.304
                            C7.795,20.842,4.691,18.099,0,16.962z M17.581,16.812l-6.123,14.239l-4.114,0.007L3.862,19.161
                            c2.503,1.602,4.635,4.144,5.386,5.914l0.406,1.469l3.808-9.729L17.581,16.812L17.581,16.812z M19.153,16.8h3.89L20.61,31.066
-                           h-3.888L19.153,16.8z"/>
+                           h-3.888L19.153,16.8z" />
                 </g>
               </g>
             </svg>
           </div>
           <div class="number"></div>
           <div class="card-holder">
-            <label>Card holder</label>
+            <label>Nombre de la Tarjeta</label>
             <div></div>
           </div>
           <div class="card-expiration-date">
-            <label>Expires</label>
+            <label>Expira</label>
             <div></div>
           </div>
         </div>
         <div class="back">
           <div class="strip"></div>
           <div class="logo">
-            <svg version="1.1" id="visa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 width="47.834px" height="47.834px" viewBox="0 0 47.834 47.834" style="enable-background:new 0 0 47.834 47.834;">
+            <svg version="1.1" id="visa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" width="47.834px" height="47.834px" viewBox="0 0 47.834 47.834"
+              style="enable-background:new 0 0 47.834 47.834;">
               <g>
                 <g>
                   <path d="M44.688,16.814h-3.004c-0.933,0-1.627,0.254-2.037,1.184l-5.773,13.074h4.083c0,0,0.666-1.758,0.817-2.143
@@ -60,11 +68,11 @@
                            C33.126,23.546,34.163,24.783,34.146,26.404z M0,16.962l0.05-0.286h6.028c0.813,0.031,1.468,0.29,1.694,1.159l1.311,6.304
                            C7.795,20.842,4.691,18.099,0,16.962z M17.581,16.812l-6.123,14.239l-4.114,0.007L3.862,19.161
                            c2.503,1.602,4.635,4.144,5.386,5.914l0.406,1.469l3.808-9.729L17.581,16.812L17.581,16.812z M19.153,16.8h3.89L20.61,31.066
-                           h-3.888L19.153,16.8z"/>
+                           h-3.888L19.153,16.8z" />
                 </g>
               </g>
             </svg>
-  
+
           </div>
           <div class="ccv">
             <label>CCV</label>
@@ -75,18 +83,18 @@
     </div>
     <form class="form" autocomplete="off" novalidate>
       <fieldset>
-        <label for="card-number">Card Number</label>
+        <label for="card-number">Numero de la Tarjeta</label>
         <input type="num" id="card-number" class="input-cart-number" maxlength="4" />
         <input type="num" id="card-number-1" class="input-cart-number" maxlength="4" />
         <input type="num" id="card-number-2" class="input-cart-number" maxlength="4" />
         <input type="num" id="card-number-3" class="input-cart-number" maxlength="4" />
       </fieldset>
       <fieldset>
-        <label for="card-holder">Card holder</label>
+        <label for="card-holder">Nombre de la Tarjeta</label>
         <input type="text" id="card-holder" />
       </fieldset>
       <fieldset class="fieldset-expiration">
-        <label for="card-expiration-month">Expiration date</label>
+        <label for="card-expiration-month">Fecha de Expiración</label>
         <div class="select">
           <select id="card-expiration-month">
             <option></option>
@@ -107,16 +115,21 @@
         <div class="select">
           <select id="card-expiration-year">
             <option></option>
-            <option>2016</option>
-            <option>2017</option>
-            <option>2018</option>
-            <option>2019</option>
-            <option>2020</option>
-            <option>2021</option>
-            <option>2022</option>
             <option>2023</option>
             <option>2024</option>
             <option>2025</option>
+            <option>2026</option>
+            <option>2027</option>
+            <option>2028</option>
+            <option>2029</option>
+            <option>2030</option>
+            <option>2031</option>
+            <option>2032</option>
+            <option>2033</option>
+            <option>2034</option>
+            <option>2035</option>
+
+
           </select>
         </div>
       </fieldset>
@@ -124,11 +137,16 @@
         <label for="card-ccv">CCV</label>
         <input type="text" id="card-ccv" maxlength="3" />
       </fieldset>
-      <button class="btn"><i class="fa fa-lock"></i> submit</button>
+      <button class="btn ConfirmarPago"><i class="fa fa-lock" onclick="confirmarPago()"></i> Pagar</button>
+      <a href="TiendaVirtual.html" class="btn Volver fa fa-lock">Volver</a>
+
     </form>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="js/Compra.js"></script>
-  
+
+
 </body>
+
 </html>

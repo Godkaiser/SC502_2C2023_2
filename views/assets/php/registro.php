@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         mysqli_query($conn, $sql);
 
         // Redirigir al usuario a Index.html
-        header("Location: Index.html");
+        header("Location: http://localhost/SC502_2C2023_G2/views/assets/Index.html");
     }
 }
 

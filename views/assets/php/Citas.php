@@ -1,33 +1,37 @@
 <?php
 
-$host = "localhost";
-$db_user = "root";
-$db_password = "Colochosma";
-$db_name = "SC502_2C2023_G2";
+$servidor = "localhost:3306";
+$usuario = "root";
+$contrasena = "";
+$dbnombre = "SC502_2C2023_G2";
+
+
+
 
 // Conexión a la base de datos//
 
-$connection = new mysqli($host, $db_user, $db_password, $db_name);
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
+}
 
 //Agregar datos del formulario//
 
-$nombre = $_POST['nombre'];
-$fecha = $_POST['fecha'];
-$hora = $_POST['hora'];
-$servicio = $_POST['servicio'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nombre= $_POST["nombre"];
+    $fecha= $_POST["fecha"];
+    $hora= $_POST["hora"];
+    $servicio= $_POST["servicio"];
 
-if (!$connection) {
-    echo "Error de conexión: " . mysql_error();
-}
-else{
-    echo "<b><h3>Se ha conectado correctamente al servidor</h3></b>";
-}
+        // Insertar datos en la tabla Citas
+        $insertQuery = "INSERT INTO Citas (nombre, fecha, hora, servicio) VALUES ('$nombre', '$fecha', '$hora''$servicio')";
+        mysqli_query($conn, $insertQuery);
 
-$instruccion_SQL = "INSERT INTO tabla(nombre, fecha, hora, servicio) VALUES ('$nombre','$fecha','$hora','$servicio')";
+        // Redirigir a la página de administración de servicios
+        header("Location: http://localhost/SC502_2C2023_G2/views/assets/Citas.html");
+    }
 
-$resultado = mysqli_query($connection,$instruccion_SQL);
-
-$response = array('success' => true);
-header('Content-Type: application/json');
-echo json_encode($response);
+$conn->close();
+?>
 ?>

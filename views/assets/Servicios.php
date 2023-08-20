@@ -35,7 +35,7 @@
   <h1 class="titulo">Servicios<br></h1>
 
   <?php
-$servidor = "localhost:3307";
+$servidor = "localhost:3306";
 $usuario = "root";
 $contrasena = "";
 $dbnombre = "SC502_2C2023_G2";
@@ -47,7 +47,7 @@ if (!$conn) {
 }
 
 // Obtener datos de la tabla Servicios
-$query = "SELECT Nombre_Servicio, descripcion, ImagenSer FROM Servicios";
+$query = "SELECT Nombre_Servicio, descripcion_servicio, ImagenSer FROM Servicios";
 $result = mysqli_query($conn, $query);
 ?>
 
@@ -56,9 +56,9 @@ $result = mysqli_query($conn, $query);
     <?php
     while ($row = mysqli_fetch_assoc($result)) {
         echo '<div class="servicio">';
-        echo '<img src="data:image/jpeg;base64,' . base64_encode($row['ImagenSer']) . '" alt="' . $row['Nombre_Servicio'] . ' '. $row['descripcion'] .'">';
+        echo '<img src="data:image/jpeg;base64,' . base64_encode($row['ImagenSer']) . '" alt="' . $row['Nombre_Servicio'] . ' '. $row['descripcion_servicio'] .'">';
         echo '<h2>' . $row['Nombre_Servicio'] . '</h2>';
-        echo '<p>' . $row['descripcion'] . '</p>';
+        echo '<p>' . $row['descripcion_servicio'] . '</p>';
         echo '</div>';
     }
     ?>

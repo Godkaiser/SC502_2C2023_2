@@ -12,8 +12,8 @@ if ($conn->connect_error) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nombreServicio = $_POST["name-Servicio"];
-    $descripcion = $_POST["descripcion"];
+    $nombreServicio = $_POST["Nombre_Servicio"];
+    $descripcion = $_POST["descripcion_servicio"];
 
     // Procesar la imagen y guardarla en la base de datos
     if (isset($_FILES["imagen"]) && $_FILES["imagen"]["error"] == 0) {
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $imagenData = mysqli_real_escape_string($conn, $imagenData);
 
         // Insertar datos en la tabla Servicios
-        $insertQuery = "INSERT INTO Servicios (Nombre_Servicio, descripcion, ImagenSer) VALUES ('$nombreServicio', '$descripcion', '$imagenData')";
+        $insertQuery = "INSERT INTO Servicios (Nombre_Servicio, descripcion_servicio, ImagenSer) VALUES ('$nombreServicio', '$descripcion', '$imagenData')";
         mysqli_query($conn, $insertQuery);
 
         // Redirigir a la página de administración de servicios

@@ -1,6 +1,6 @@
 <?php
 
-$servidor = "localhost:3306";
+$servidor = "localhost:3307";
 $usuario = "root";
 $contrasena = "";
 $dbnombre = "SC502_2C2023_G2";
@@ -10,10 +10,10 @@ $dbnombre = "SC502_2C2023_G2";
 
 // Conexión a la base de datos//
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servidor, $usuario, $contrasena, $dbnombre);
 
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
+if (!$conn) {
+    die("Error de conexión: " . mysqli_connect_error());
 }
 
 //Agregar datos del formulario//

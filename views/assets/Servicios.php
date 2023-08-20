@@ -35,7 +35,7 @@
   <h1 class="titulo">Servicios<br></h1>
 
   <?php
-$servidor = "localhost:3306";
+$servidor = "localhost:3307";
 $usuario = "root";
 $contrasena = "";
 $dbnombre = "SC502_2C2023_G2";

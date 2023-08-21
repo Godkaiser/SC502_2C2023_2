@@ -23,10 +23,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Insertar datos en la tabla productos
         $insertQuery = "INSERT INTO productos (nombre, precio, ImagenPro, categoria) VALUES ('$nombre', $precio, '$imagenData', '$categoria')";
         mysqli_query($conn, $insertQuery);
+
+        // Redirigir al admin a Admin.php
         header("Location: http://localhost/SC502_2C2023_G2/views/assets/TiendaAdmin.html");
     }
-
-
 }
 
 $conn->close();

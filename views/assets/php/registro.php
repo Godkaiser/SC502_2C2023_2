@@ -1,4 +1,5 @@
 <?php
+// Establecer conexión a la base de datos
 $servidor = "localhost:3306";
 $usuario = "root";
 $contrasena = "";

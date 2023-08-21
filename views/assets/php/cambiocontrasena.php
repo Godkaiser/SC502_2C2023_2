@@ -26,13 +26,10 @@ if ($result) {
     $to = $email;
     $subject = "Cambio de contraseña exitoso";
     $message = "Se ha registrado un cambio de contraseña en tu cuenta.";
-    $headers = $email;
-
-    // Enviar el correo
-    mail($to, $subject, $message, $headers);
 
     // Mostrar pop-up
     echo '<script>alert("Cambio de contraseña exitoso. Se ha enviado un correo de confirmación.");</script>';
+    header("Location: http://localhost/SC502_2C2023_G2/views/assets/Index.html");
 } else {
     echo '<script>alert("Error al cambiar la contraseña. Por favor, verifica tus datos.");</script>';
 }

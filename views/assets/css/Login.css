@@ -126,3 +126,34 @@ logo {
 		background-position: 0% 50%;
 	}
 }
+
+footer {
+   
+    padding: 10px;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.carousel img {
+    max-width: 200px;
+    max-height: 100px;
+    animation: slide 5s infinite;
+    text-align: center;
+}
+
+@keyframes slide {
+    0%, 100% {
+        transform: translateX(100);
+    }
+    20%, 80% {
+        transform: translateX(-100%);
+    }
+}

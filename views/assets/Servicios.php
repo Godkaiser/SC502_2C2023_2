@@ -33,7 +33,7 @@
   </div>
 
   <h1 class="titulo">Servicios<br></h1>
-
+  <!--CONEXION A BASE DE DATOS-->
   <?php
 $servidor = "localhost:3306";
 $usuario = "root";

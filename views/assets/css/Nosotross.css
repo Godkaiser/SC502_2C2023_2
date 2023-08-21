@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
 
-body{
-        font-family: 'Libre Baskerville', serif;
-}
+
 
 .contenedorNav {
     margin: auto;
@@ -25,10 +24,12 @@ h1 {
 }
 
 .BotonNav {
-    background-color: #A6216A;
-    color: white;
+    background-color: transparent;
+    color: #BF9765;
+    top: 10px;
+    left: 10px;
     border-color: transparent;
-    border-radius: 5%;
+    position: fixed;
 }
 
 .Banner h1 {
@@ -63,11 +64,14 @@ h1 {
     text-align: center;
     padding-bottom: 2%;
     color: #A6216A;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 60px;
 }
 
 .footerNosotros {
     background-color: #A6216A;
     color: white;
+    padding-top: 1px;
 }
 
 .logo {
@@ -84,4 +88,8 @@ h1 {
     margin-top: 90px;
     margin-left: auto;
     margin-right: auto;
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

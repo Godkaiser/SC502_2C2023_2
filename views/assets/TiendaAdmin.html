@@ -220,7 +220,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     <h5 class="m-0">Citas Agendadas</h5>
                                 </div>
                                 <div class="card-body">
-                                    <form action="php/tiendaAdmin.php" method="post" enctype="multipart/form-data">
+                                    <form  action="php/tiendaAdmin.php" method="post" enctype="multipart/form-data">
                                         <label for="nombre_producto">Nombre del Producto:</label>
                                         <input type="text" name="nombre_producto" required>
                                         <br>
@@ -243,6 +243,33 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </div>
                             </div>
                         </div>
+                        <div class="card-body p-0">
+                            <div class="row mt-2">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-10">
+                                    <table id="tbllistado" class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                            <th>ID</th>
+                                            <th>Producto</th>
+                                            <th>Precio</th>
+                                            <th>Categoria</th>
+                                            <th>Opciones</th>
+                                        </thead>
+                                        <tbody id="tableBody">
+                                        </tbody>
+                                        <tfooter>
+                                            <th>ID</th>
+                                            <th>Producto</th>
+                                            <th>Precio</th>
+                                            <th>Categoria</th>
+                                            <th>Opciones</th>
+                                        </tfooter>
+                                    </table>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </div>
+
                     </div>
                     <!-- /.col-md-6 -->
                 </div>
@@ -282,6 +309,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="js/adminNancy.js"></script>
+
+    <script src="js/TiendaAdmin.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </body>
 
 </html>

@@ -31,11 +31,12 @@ body {
 
 
 .titulo {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Mouse Memoirs', sans-serif;
   color: #A6216A;
   text-align: center;
   margin-top: 35px;
   margin-bottom: 35px;
+  font-size: 55px;
 }
 
 .cabello {
@@ -53,9 +54,10 @@ body {
 
 .productos {
   display: flex;
-  flex-wrap: wrap; /* Permite que los productos se envuelvan en filas si no caben en el ancho de la pantalla */
-  justify-content: center; /* Centra los productos horizontalmente */
-  margin-bottom: 25px; /* Espaciado inferior entre categorías */
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center; 
+  margin-bottom: 25px; 
   margin-left: 1%;
   margin-right: 1%;
 }

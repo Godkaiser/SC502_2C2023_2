@@ -19,13 +19,18 @@
     <!-- SIDEBAR -->
     <div class="Navegador w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="miSidebar">
         <button class="BotonCerrar w3-bar-item w3-button w3-large" onclick="Cerrar_Nav()">Cerrar &times;</button>
-        <a href="Index.html" class="OpcionNav w3-button w3-bar-item"><br>Inicio</a>
-        <a href="Login.html" class="OpcionNav w3-button w3-bar-item"><br>Ingresar a sistema</a>
-        <a href="TiendaVirtual.html" class="OpcionNav w3-button w3-bar-item"><br>Tienda Virtual</a>
-        <a href="Servicios.html" class="OpcionNav w3-button w3-bar-item"><br>Servicios</a>
+        <a href="InicioU.html" class="OpcionNav w3-button w3-bar-item"><br>Inicio</a>
+        <a href="TiendaVirtual.php" class="OpcionNav w3-button w3-bar-item"><br>Tienda Virtual</a>
+        <a href="Servicios.php" class="OpcionNav w3-button w3-bar-item"><br>Servicios</a>
         <a href="Citas.html" class="OpcionNav w3-button w3-bar-item"><br>Reservacion de Cita</a>
         <a href="Nosotros.html" class="OpcionNav w3-button w3-bar-item"><br>Nosotros</a>
+        <a href="Index.html" class="OpcionNav w3-button w3-bar-item"><br>Cerrar Sesión</a>
     </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#A6216A" fill-opacity="1"
+            d="M0,160L30,149.3C60,139,120,117,180,144C240,171,300,245,360,256C420,267,480,213,540,208C600,203,660,245,720,250.7C780,256,840,224,900,181.3C960,139,1020,85,1080,101.3C1140,117,1200,203,1260,213.3C1320,224,1380,160,1410,128L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+        </path>
+    </svg>
     <div id="main">
         <div class="contenedorNav">
             <button id="AbrirNav" class="BotonNav" onclick="Abrir_Nav()"><i
@@ -41,7 +46,6 @@
                 <p>Total: &#8353;<span id="cart-total">0</span></p>
                 <button class="realizar-compra" onclick="realizarCompra()">Realizar Compra</button>
                 <button class="cerrar-carrito" onclick="Cerrar_Carrito()">Cerrar</button>
-
             </div>
 
 
@@ -179,7 +183,11 @@
         ?>
     </div>
 
-
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#A6216A" fill-opacity="1"
+            d="M0,160L30,149.3C60,139,120,117,180,144C240,171,300,245,360,256C420,267,480,213,540,208C600,203,660,245,720,250.7C780,256,840,224,900,181.3C960,139,1020,85,1080,101.3C1140,117,1200,203,1260,213.3C1320,224,1380,160,1410,128L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+        </path>
+    </svg>
     <!-- FOOTER -->
     <footer class="footerNosotros text-light">
         <section class="">
@@ -202,13 +210,13 @@
                             Navegar
                         </h6>
                         <p>
-                            <a href="Index.html" class="link-light">Inicio</a>
+                            <a href="InicioU.html" class="link-light">Inicio</a>
                         </p>
                         <p>
                             <a href="Login.html" class="link-light">Login</a>
                         </p>
                         <p>
-                            <a href="Servicios.html" class="link-light">Servicios</a>
+                            <a href="Servicios.php" class="link-light">Servicios</a>
                         </p>
                         <p>
                             <a href="Citas.html" class="link-light">Reservar Cita</a>

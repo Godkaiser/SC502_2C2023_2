@@ -51,22 +51,7 @@ setTimeout(function(){
   });
 }, 500);
 
-/*function getCreditCardType(accountNumber) {
-  if (/^5[1-5]/.test(accountNumber)) {
-    result = 'mastercard';
-  } else if (/^4/.test(accountNumber)) {
-    result = 'visa';
-  } else if ( /^(5018|5020|5038|6304|6759|676[1-3])/.test(accountNumber)) {
-    result = 'maestro';
-  } else {
-    result = 'unknown'
-  }
-  return result;
-}
 
-$('#card-number').change(function(){
-  console.log(getCreditCardType($(this).val()));
-})*/
 $(document).ready(function() {
   // Función para manejar el clic en el botón de confirmación
   function confirmarPago() {
@@ -86,7 +71,7 @@ $(document).ready(function() {
           timer: 2000, // Duración del mensaje (en milisegundos)
           showConfirmButton: false
         }).then(() => {
-          window.location.href = 'inicio.html'; // Redireccionar al inicio
+          window.location.href = 'http://localhost/SC502_2C2023_G2/views/assets/InicioU.html'; // Redireccionar al inicio
         });
       } else if (result.isDismissed === Swal.DismissReason.cancel) {
         Swal.fire(
@@ -100,7 +85,7 @@ $(document).ready(function() {
 
   // Asociar la función confirmarPago al clic del botón
   $('.btn.ConfirmarPago').on('click', function(event) {
-    event.preventDefault(); // Prevenir el comportamiento predeterminado del botón
+    event.preventDefault();
     confirmarPago();
   });
 

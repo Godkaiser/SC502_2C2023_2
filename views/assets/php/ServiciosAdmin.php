@@ -1,14 +1,15 @@
 <?php
 // Establecer conexión a la base de datos
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "SC502_2C2023_G2";
+$servidor = "localhost:3306";
+$usuario = "root";
+$contrasena = "";
+$dbnombre = "SC502_2C2023_G2";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = mysqli_connect($servidor, $usuario, $contrasena, $dbnombre);
 
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
+
+if (!$conn) {
+    die("Error de conexión: " . mysqli_connect_error());
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

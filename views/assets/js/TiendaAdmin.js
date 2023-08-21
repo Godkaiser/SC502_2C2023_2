@@ -1,48 +1,52 @@
-document.getElementById('product-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-  
-    // Obtener los valores del formulario
-    const name = document.getElementById('name').value;
-    const price = document.getElementById('price').value;
-    const description = document.getElementById('description').value;
-  
-    // Crear un objeto FormData para enviar los datos al servidor
-    const formData = new FormData();
-    formData.append('name', name);
-    formData.append('price', price);
-    formData.append('description', description);
-  
-    // Realizar la solicitud AJAX al servidor PHP
-    fetch('agregar_producto.php', {
-      method: 'POST',
-      body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-      // Manejar la respuesta del servidor
-      if (data.success) {
-        alert('El producto se agregó correctamente.');
-        // Actualizar la lista de productos en la página
-        // ...
-      } else {
-        alert('Ocurrió un error al agregar el producto.');
-      }
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    });
-  });
-  
+function updateTable() {
+  $.ajax({
+      url: "php/tiendaAdmin.php",
+      method: "GET",
+      dataType: "json",
+      success: function (data) {
+          let tableContent = "";
 
-  function Abrir_Nav() {
-    document.getElementById("main").style.marginLeft = "10%";
-    document.getElementById("miSidebar").style.width = "10%";
-    document.getElementById("miSidebar").style.display = "block";
-    document.getElementById("AbrirNav").style.display = 'none';
-  }
-  function Cerrar_Nav() {
-    document.getElementById("main").style.marginLeft = "0%";
-    document.getElementById("miSidebar").style.display = "none";
-    document.getElementById("AbrirNav").style.display = "inline-block";
-  }
-  
+          // Recorre los datos recibidos y construye las filas de la tabla
+          for (let i = 0; i < data.length; i++) {
+              tableContent += "<tr>";
+              tableContent += "<td>" + data[i].id + "</td>";
+              tableContent += "<td>" + data[i].nombre + "</td>";
+              tableContent += "<td>" + data[i].precio + "</td>";
+              tableContent += "<td>" + data[i].categoria + "</td>";
+              tableContent += "<td>Opciones</td>"; // Agrega opciones si es necesario
+              tableContent += "</tr>";
+          }
+
+          // Actualiza el contenido de la tabla
+          $("#tableBody").html(tableContent);
+      },
+      error: function (error) {
+          console.log("Error:", error);
+      }
+  });
+}
+
+// Captura el envío del formulario y actualiza la tabla después de la inserción
+$(document).ready(function () {
+  $("#productForm").submit(function (event) {
+      event.preventDefault();
+      // Realiza la petición AJAX para insertar el producto
+      $.ajax({
+          url: "php/tiendaAdmin.php",
+          method: "POST",
+          data: new FormData(this),
+          contentType: false,
+          processData: false,
+          success: function () {
+              // Llama a la función para actualizar la tabla
+              updateTable();
+          },
+          error: function (error) {
+              console.log("Error:", error);
+          }
+      });
+  });
+
+  // Actualiza la tabla cuando la página carga
+  updateTable();
+});

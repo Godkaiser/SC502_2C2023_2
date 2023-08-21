@@ -22,6 +22,9 @@ function addToCart(itemName, itemPrice) {
   cartTotal += itemPrice;
   updateCart();
 
+  const comprarLink = document.getElementById('comprar-link');
+  comprarLink.href = `compra.html?total=${cartTotal}`;
+
 }
 
 

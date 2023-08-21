@@ -59,7 +59,3 @@ ADD FOREIGN KEY (cliente_id) REFERENCES clientes(id) ON DELETE CASCADE;
 -- Agregar foreign key a la tabla "citas" para la columna "servicio_id"
 ALTER TABLE citas
 ADD FOREIGN KEY (servicio_id) REFERENCES Servicios(id) ON DELETE CASCADE;
-
--- Agregar foreign key a la tabla "empleados"
-ALTER TABLE empleados
-ADD FOREIGN KEY (rol_id) REFERENCES roles(id) ON DELETE CASCADE;
